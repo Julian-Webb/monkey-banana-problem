@@ -4,11 +4,11 @@ I try to solve a harder version of the classic monkey banana problem. It involve
 The problem description:
 The monkey and banana problem1is a well-known toy problem from the field of AI. It consists of a monkey in a room with some bananas hanging from the ceiling 
 outside its range. In addition, a crate is available that the monkey can use to reach the bananas by climbing on them. The monkey and the box have the height low, 
-but when the monkey climbs on the box, it has the height high, same as the bananas. The monkey is then able to get the bananas.
-https://en.wikipedia.org/wiki/Monkey_and_banana_problem
-In contrast to the basic problem outlined in Figure 1, we make some additions:
+but when the monkey climbs on the box, it has the height high, same as the bananas. The monkey is then able to get the bananas.  
+https://en.wikipedia.org/wiki/Monkey_and_banana_problem  
+In contrast to the basic problem outlined in Figure 1, we make some additions:  
 1.  The monkey is kept in discrete positions, i.e. instead of 3 positions, a total of 6 positions P1 to P6 are available. The monkey is initially at position P1, 
-the bananas are hanging at position P3 and the box is at position P2.
+the bananas are hanging at position P3 and the box is at position P2.  
 2.  The bananas are attached to the ceiling, which means that the monkey can’t just take them just like that.  He  therefore  needs  a  knife  to  cut  the  
 bananas  from  the  ceiling.  This  knife  should  initially  beplaced at the position P4. The monkey can hold the knife and the bananas at the same time.
 3.  The monkey would also like to have something to drink with his bananas. To do this, he can fill up a water glass at a water tap. The water tap is located 
