@@ -14,17 +14,17 @@ bananas  from  the  ceiling.  This  knife  should  initially  beplaced at the po
 3.  The monkey would also like to have something to drink with his bananas. To do this, he can fill up a water glass at a water tap. The water tap is located 
 at position P5 on the ceiling (high). The filled water glass is so heavy that the monkey cannot hold the knife or the bananas at the same time.
 4.  The monkey loves order and therefore wants to eat in a tidy room. For this, the box and the knife must be at the edge of the room and the monkey must be in a
-position where there is no box.The following functions are available to the monkey
-•Go: To get from one place to another.
-•Climbing: To climb a box that is in the same place as the monkey. After this action, the height of themonkey ishigh.
-•Get down: To climb down again from a crate. After this action the height of the monkey islow.
-•Take Bananas: To grab a banana to be able to transport it afterwards.
-•Take Knife: Um ein Messer zu greifen und danach transportieren zu k ̈onnen.
-•Greife Wasserglas: To be able to grab a knife and transport it afterwards.
-•Release: To release a held object (knife, banana, water glass). Afterwards, the object should be in thesame place and at the same height as the monkey.
+position where there is no box.The following functions are available to the monkey  
+•Go: To get from one place to another.  
+•Climbing: To climb a box that is in the same place as the monkey. After this action, the height of themonkey is high.  
+•Get down: To climb down again from a crate. After this action the height of the monkey is low.  
+•Take Bananas: To grab a banana to be able to transport it afterwards.  
+•Take Knife: To take a knife and be able to transport it afterwards.  
+•Greife Wasserglas: To be able to grab a knife and transport it afterwards.  
+•Release: To release a held object (knife, banana, water glass). Afterwards, the object should be in thesame place and at the same height as the monkey.  
 •Push: To move a box that is in the same place as the monkey to another position. However, the monkeycan only do this if it has both hands free, i.e. it is not 
-transporting a banana at the moment.
+transporting a banana at the moment.  
 •Fetch water: To fill a held water glass at the tap with water. Now model a suitable PDDL domain and a problem definition to describe the extended monkey and 
-banana problem. Use the FF planner to test your modeling. 
-You can test using the following command:
+banana problem. Use the FF planner to test your modeling.   
+You can test using the following command:  
 $ rosrun ff ff -o domain.pddl -f problem.pddl
