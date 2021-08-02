@@ -23,6 +23,7 @@
     (high tap)
     (has monkey hand1)
     (has monkey hand2)
+    (=(free-hands monkey) 2)
   )
   (:goal 
     (and

@@ -1,6 +1,6 @@
 (define (domain mb_domain)
 
-  (:requirements :typing :universal-preconditions :conditional-effects :equality)
+  (:requirements :typing :universal-preconditions :conditional-effects :equality :numeric-fluents)
 
   (:types
     holdable location monkey hand box tap - object
@@ -16,8 +16,12 @@
     (full ?glass - glass)
   ) 
 
+  (:functions
+    (free-hands ?monkey - monkey)
+  )
+
   (:action go
-    :parameters (?monkey - monkey ?from ?to - location)
+    :parameters (?from ?to - location)
     :precondition 
     (and
       (at ?monkey ?from)
