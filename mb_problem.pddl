@@ -19,17 +19,26 @@
     (at knife P4)
     (at tap P5)
     (at glass P5)
+    (high glass)
+    (high tap)
     (has monkey hand1)
     (has monkey hand2)
   )
   (:goal 
     (and
-      ;(and (at monkey ?loc) (at banana ?loc))
-      ;(and (at monkey ?loc) (and (at glass ?loc) (full glass)))
+      (exists(?loc - location) 
+        (and(at monkey ?loc) (at banana ?loc) 
+          (or(and(high monkey) (high banana)) (and(not(high monkey)) (not(high banana)))) ; height of monkey == height of banana
+          ))
+      (exists(?loc - location) 
+        (and(at monkey ?loc) (at glass ?loc) (full glass) 
+          (or(and(high monkey) (high glass)) (and(not(high monkey)) (not(high glass)))) ; height of monkey == height of glass
+          ))
       (or (at box P1) (at box P6))
       (or (at knife P1) (at knife P6))    
       ; The monkey isn't at the same postion as the box or the knife (The room is tidy)
-      ;(not(and (at monkey ?loc) (or (at box ?loc) (at knife ?loc)))) 
+      (forall(?loc - location) (not(and (at monkey ?loc) (or (at box ?loc) (at knife ?loc)))))
+      
     )
   )
 )
