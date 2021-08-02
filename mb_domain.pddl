@@ -1,5 +1,3 @@
-; ToDo: Use when operator in the effects of dropping an item to make it be dropped in the same height as the monkey
-
 (define (domain mb_domain)
 
   (:requirements :typing :universal-preconditions :conditional-effects :equality)
